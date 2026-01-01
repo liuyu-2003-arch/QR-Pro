@@ -17,18 +17,3 @@ export interface QRConfig {
   shadowEnabled: boolean;
   shadowAmount: number;
 }
-
-export interface HistoryItem extends QRConfig {
-  id: string;
-  timestamp: number;
-  title: string;
-}
-
-/**
- * Interface for AI-generated analysis of QR code content
- */
-export interface AIAnalysis {
-  optimizedValue: string;
-  suggestedTitle: string;
-  summary: string;
-}
